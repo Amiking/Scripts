@@ -4,8 +4,8 @@ const STATUS_NOT_AVAILABLE = 0 // 不支持解锁
 const STATUS_TIMEOUT = -1 // 检测超时
 const STATUS_ERROR = -2 // 检测异常
 
-const $ = new Env('Disney+ 策略切换')
-let disneyPolicyName = $.getval('Helge_0x00.Disney_Policy') || 'Disney+'
+const $ = new Env('Disney 策略切换')
+let disneyPolicyName = $.getval('Helge_0x00.Disney_Policy') || 'Disney'
 let debug = $.getval('Helge_0x00.Disney_Debug') === 'true'
 let recheck = $.getval('Helge_0x00.Disney_Recheck') === 'true'
 let t = parseInt($.getval('Helge_0x00.Disney_Timeout')) || 8000
